@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F24791;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F24791;
+    padding: 20px 0;
+    transition: background-color 0.3s ease; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+section:not(#home) {
+    padding: 100px 20 px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#home {
+/* background-color: #4a90e2; OBS: Caso opte por usar cor de fundo nâo precisa inserir background-size e nem background-repeat */ 
+background-image: url(https://img.freepik.com/fotos-gratis/donuts-coloridos-com-chocolates_23-2148019463.jpg?t=st=1727312426~exp=1727316026~hmac=92da163ffdf73abd189f823fb07d566ec9b8d43e4f98e7700ef1fa4c3ddcb4e4&w=900);
+background-size: cover;
+background-repeat: no-repeat;
+color: #F2274C;
+height: 100vh;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 1.5em;
+}
+
+.cta-button {
+    margin-top: 15px;
+    background-color: #8DD9D4;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgb(0, 0, 0);
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.cta-button:hover{
+    background-color: #F24791
+}
